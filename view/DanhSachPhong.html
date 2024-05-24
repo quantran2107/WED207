@@ -1,0 +1,138 @@
+<div class="container-fluid p-0">
+    <div class="container">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <table class="table table-bordered">
+            <thead class="text-center align-middle">
+                <tr>
+                    <th>Loại Phòng</th>
+                    <th>Thông tin phòng</th>
+                    <th>Giá</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in listPhong">
+                    <td class="text-center fw-bold w-25 text-danger"><img src="{{item.img}}" alt=""
+                            class="img-fluid">{{item.loaiPhong}}</td>
+                    <td>
+                        <h6>Diện tích: {{ item.dienTich }}</h6>
+                        <h6>Loại giường: {{ item.loaiGiuong }}</h6>
+                        <h6>Tiêu chuẩn: {{ item.tieuChuan }}</h6>
+                        <h6>Phòng tắm: {{ item.phongTam }}</h6>
+                        <h6>Cửa sổ: {{ item.cuaSo }}</h6>
+                    </td>
+                    <td class="text-center fw-bold">
+                        <h4 class="fw-bold">{{ item.gia | currency: '' :0}} VND</h4>
+                        <h5>(1 Đêm)</h5>
+                    </td>
+                    <td><a href="#!/ChonNgay/{{item.id}}"><button type="button" class="btn btn-danger container-fluid">ĐẶT
+                                PHÒNG</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">ƯU ĐÃI</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="w-100 h-50">
+                    <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                        src="https://a25hotel.com/files/images/anh/412451451_668742088782506_5848353815077771117_n.jpg"
+                        alt="">
+                </div>
+                <h5 class="fw-bold text-danger">Chào Đón Năm Mới với Chương Trình Ưu Đãi Tuyệt Vời Tại A25 Hotel
+                </h5>
+                <h6>Chào Đón Năm Mới với Chương Trình Ưu Đãi Tuyệt Vời Tại A25 Hotel</h6>
+                <h6>A25 Hotel chân thành cảm ơn sự ủng hộ và tin tưởng của quý khách trong suốt thời gian vừa qua.
+                    A25 Hotel xin gửi tới các quý khách hàng chương trình khuyến mãi đặc biệt dịp Tết Dương Lịch
+                </h6>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="w-100 h-50">
+                    <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                        src="https://a25hotel.com/files/images/khuyen-mai/410697314_665581889098526_3913555236718698898_n.jpg"
+                        alt="">
+                </div>
+                <h5 class="fw-bold text-danger">GIẢM GIÁ 50% TIỀN PHÒNG KHÁCH SẠN A25 HẠ LONG</h5>
+                <h6>GIẢM GIÁ 50% TIỀN PHÒNG KHÁCH SẠN A25 HẠ LONG - ĐỂ KHÁCH VỀ THAM DỰ LỄ KỶ NIỆM 30 NĂM THÀNH LẬP
+                    THÀNH PHỐ HẠ LONG</h6>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="w-100 h-50">
+                    <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                        src="https://a25hotel.com/files/images/13.png" alt="">
+                </div>
+                <h5 class="fw-bold text-danger">BẢN TIN HAPPY DAY “NGHỈ KHÁCH SẠN SANG, NHẬN ƯU ĐÃI VÀNG”</h5>
+                <h6>Tập đoàn khách sạn A25 là một hệ thống khách sạn cao cấp tọa lạc tại các vị trí đắc địa trên các
+                    thành phố lớn. Với tiêu chí "Khách...</h6>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="w-100 h-50">
+                    <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                        src="https://a25hotel.com/files/images/13.png" alt="">
+                </div>
+                <h5 class="fw-bold text-danger">BẢN TIN HAPPY DAY “NGHỈ KHÁCH SẠN SANG, NHẬN ƯU ĐÃI VÀNG”</h5>
+                <h6>Mùa cao điểm du lịch cuối năm thường bắt đầu từ tháng 12 và kéo dài đến hết tháng 2 năm sau. Đây
+                    là thời điểm mà nhu cầu du lịch tăng...</h6>
+            </div>
+        </div>
+    </div>
+    <div class="p-0" style="background-image: url(https://a25hotel.com/files/images/3.jpg);">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">TIN TỨC</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="w-100 h-50">
+                        <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                            src="https://a25hotel.com/files/images/anh/416567227_675603374763044_8751384419070546714_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="bg-light p-3" style="height: 40%;">
+                        <h5 class="fw-bold">Tiệc Cuối năm ấm áp, Chào đón 1 năm mới đầy thử thách</h5>
+                        <h6>Year End Party 2023 không đơn thuần là tri ân những cá nhân đã đồng hành, gắn bó cùng
+                            A25 Hotel mà trên hết, đó còn là những chia sẻ tâm huyết từ người “anh lớn”...</h6>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-danger rounded-5 px-4 hover-black"> Xem thêm ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="w-100 h-50">
+                        <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                            src="https://a25hotel.com/files/images/anh/414715202_672243951765653_8619243342777984372_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="bg-light p-3" style="height: 40%;">
+                        <h5 class="fw-bold">Lounge Đẳng Cấp của A25 Bistro mang lại không gian sang trọng và thoải
+                            mái</h5>
+                        <h6>Nằm gọn trong khuôn viên khách sạn, A25 Bistro là nơi hòa mình vào không khí sang trọng
+                            và hiện đại, tạo nên trải nghiệm đắm chìm trong vẻ đẹp của nghệ thuật và...</h6>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-danger rounded-5 px-4 hover-black"> Xem thêm ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="w-100 h-50">
+                        <img class="img-fluid rounded-2 w-100 h-100 object-fit-cover"
+                            src="https://a25hotel.com/files/images/anh/410683313_665006769156038_1339149599024599592_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="bg-light p-3" style="height: 40%;">
+                        <h5 class="fw-bold">Tour du lịch Hà Nội - Bái Đính - Tràng An 1 ngày</h5>
+                        <h6>Là một trong những tour du lịch phổ biến nhất tại Ninh Bình, thu hút đông đảo du khách
+                            trong và ngoài nước. Tour có lịch trình trọn gói, khởi hành từ Hà Nội và đưa du khách...
+                        </h6>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-danger rounded-5 px-4 hover-black"> Xem thêm ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

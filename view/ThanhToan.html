@@ -1,0 +1,83 @@
+<form class="mt-3 p-3" ng-submit="thanhToan()">
+    <div class="row">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <div class="col-12">
+            <h4 class="fw-bold">Vui lòng điền thông tin của bạn</h4>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputHoVaTen" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control border-2" id="InputHoVaTen" ng-model="inputValue.hoTen">
+                <p ng-if="kiemTra.hoTen" class="text-danger">Vui lòng nhập lại họ và tên</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label class="form-label">Giới tính</label>
+                <div class="form-check">
+                    <input class="form-check-input border-2" type="radio" value="Nam" name="flexRadioDefault"
+                        id="radioNam" ng-model="inputValue.gioiTinh">
+                    <label class="form-check-label" for="radioNam">
+                        Nam
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border-2" type="radio" value="Nữ" name="flexRadioDefault" id="radioNu">
+                    <label class="form-check-label" for="radioNu" ng-model="inputValue.gioiTinh">
+                        Nữ
+                    </label>
+                </div>
+                <p ng-if="kiemTra.gioiTinh" class="text-danger">Vui lòng chọn giới tính</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputSDT" class="form-label">Số điện thoại</label>
+                <input type="text" class="form-control border-2" id="InputSDT" ng-model="inputValue.SDT">
+                <p ng-if="kiemTra.SDT" class="text-danger">Vui lòng nhập lại số điện thoại</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputCCCD_CMND" class="form-label">CCCD/CMND</label>
+                <input type="text" class="form-control border-2" id="InputCCCD_CMND"
+                    ng-model="inputValue.CCCD_CMND">
+                <p ng-if="kiemTra.CCCD_CMND" class="text-danger">Vui lòng nhập lại CCCD/CMND</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputEmail" class="form-label">Email</label>
+                <input type="text" class="form-control border-2" id="InputEmail" ng-model="inputValue.email">
+                <p ng-if="kiemTra.email" class="text-danger">Vui lòng nhập lại email</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label class="form-label">Hình thức thanh toán</label>
+                <select class="form-select form-control bg-body-tertiary rounded" ng-model="inputValue.httt">
+                    <option value="TheTinDung">Thẻ tín dụng</option>
+                    <option value="TienMat">Tiền mặt</option>
+                    <option value="ViDienTu">Ví điện tử</option>
+                    <option value="ChuyenKhoanNganHang">Chuyển khoản ngân hàng</option>
+                </select>
+                <p ng-if="kiemTra.CCCD_CMND" class="text-danger">Vui lòng chọn hình thức thanh toán</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <label class="form-label">Thêm yêu cầu đặc biệt(nếu có)</label>
+            <div class="input-group input-group-lg mb-3">
+                <textarea class="form-control" aria-label="With textarea" ng-model="inputValue.ycdb"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <button type="reset" class="btn btn-outline-dark"><i class="bi bi-arrow-clockwise"></i>
+                Reset</button>
+            <button class="btn btn-outline-dark btn-primary" type="submit">Đặt phòng</button>
+        </div>
+    </div>
+</form>

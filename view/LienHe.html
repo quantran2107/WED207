@@ -1,0 +1,53 @@
+<div class="container-fluid p-0">
+    <div class="container">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <div class="container p-4">
+            <h3 class="fw-bold text-center align-middle text-danger">FORM GỬI THÔNG TIN LIÊN HỆ</h3>
+        </div>
+        <form ng-submit="guiLienHe()">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="InputHoVaTen" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control border-2" ng-model="inputValue.hoTen" id="InputHoVaTen">
+                        <p ng-if="kiemTra.hoTen" class="text-danger">Vui lòng nhập lại họ tên</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="InputDiaChi" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control border-2" ng-model="inputValue.diaChi" id="InputDiaChi">
+                        <p ng-if="kiemTra.diaChi" class="text-danger">Vui lòng nhập lại địa chỉ</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="InputDienThoai" class="form-label">Điện thoại</label>
+                        <input type="text" class="form-control border-2" ng-model="inputValue.SDT" id="InputDienThoai">
+                        <p ng-if="kiemTra.SDT" class="text-danger">Vui lòng nhập lại số điện thoại</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email</label>
+                        <input type="text" class="form-control border-2" ng-model="inputValue.email" id="InputEmail">
+                        <p ng-if="kiemTra.email" class="text-danger">Vui lòng nhập lại email</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Thông tin thêm</label>
+                    <div class="input-group input-group-lg mb-3">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="col-12 container text-center my-3">
+                    <button class="btn btn-success p-3 rounded-0" type="submit">
+                        <h5 class="text-light text-center align-middle">Gửi thông tin</h5>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

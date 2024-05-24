@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A25 hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/DanhSachPhong.css">
+</head>
+
+<body ng-app="myApp">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-danger p-3 fw-bold fs-5">
+            <a class="navbar-brand" href="#">
+                <img src="https://a25hotel.com/files/images/logo/logo-a25.png" alt="Bootstrap" width="100" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/DanhSachPhong">Danh sách phòng</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/LienHe">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/DatPhong">Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/LichSuDatPhong">Lịch sử đặt phòng</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-center">
+            <img src="https://a25hotel.com/files/images/Banner%20cover%20F%20A25(1).png" class="w-100 h-100" alt="...">
+        </div>
+    </header>
+
+    <main class="container">
+        <div ng-view>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-danger">
+            <div class="text-center py-4 text-light">
+                <img style="width: 150px;" src="https://a25hotel.com/files/images/logo/logo-a25.png" alt="">
+                <div class="justify-content-end">
+                    <h5 class="mt-4">Trụ sở chính: 98 Sơn Tây, Kim Mã, Ba Đình, Hà Nội</h5>
+                    <h5>Điện thoại: 024 3736 8933 - 024 3736 8934</h5>
+                    <h5>Hotline: 0789 252525 - 1900 6925 (1000đ/phút)</h5>
+                    <h5>Email: info@a25hotel.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./libs/angular.min.js"></script>
+    <script src="./libs/angular-route.min.js"></script>
+    <script src="./route.js"></script>
+    <script src="./js/DanhSachPhong.js"></script>
+    <script src="./js/LienHe.js"></script>
+    <script src="./js/ChonNgay.js"></script>
+    <script src="./js/DatPhong.js"></script>
+    <script src="./js/ThanhToan.js"></script>
+    <script src="./js/LichSuDatPhong.js"></script>
+    <script src="./js/ThongTinPhong.js"></script>
+    <script src="./js/SuaThongTinPhong.js"></script>
+</body>
+
+</html>

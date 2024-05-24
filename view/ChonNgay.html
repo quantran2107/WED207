@@ -1,0 +1,63 @@
+<div class="container-fluid p-0">
+    <div class="container">
+        <div class="col-12 mt-5">
+            <h4 class="fw-bold">Thông tin phòng</h4>
+        </div>
+        <table class="table table-bordered">
+            <thead class="text-center align-middle">
+                <tr>
+                    <th>Loại Phòng</th>
+                    <th>Thông tin phòng</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center fw-bold w-25 text-danger"><img src="{{img}}" alt=""
+                            class="img-fluid">{{loaiPhong}}</td>
+                    <td>
+                        <h6>Diện tích: {{ dienTich }}</h6>
+                        <h6>Loại giường: {{ loaiGiuong }}</h6>
+                        <h6>Tiêu chuẩn: {{ tieuChuan }}</h6>
+                        <h6>Phòng tắm: {{ phongTam }}</h6>
+                        <h6>Cửa sổ: {{ cuaSo }}</h6>
+                    </td>
+                    <td class="text-center fw-bold">
+                        <h4 class="fw-bold">{{ gia | currency: '' :0}} VND</h4>
+                        <h5>(1 Đêm)</h5>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form class="mt-3 p-3" ng-submit="themVaoGioHang()">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="fw-bold">Vui lòng chọn ngày nhận và trả phòng</h4>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="ngayNhanPhong">Ngày nhận phòng</label>
+                        <input type="datetime-local" class="form-control border-2" id="ngayNhanPhong"
+                            formControlName="ngayNhanPhong" ng-model="inputValue.ngayNhan">
+                        <p ng-if="kiemTra.ngayNhan" class="text-danger">Vui lòng nhập lại ngày nhận phòng!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="ngayTraPhong">Ngày trả phòng</label>
+                        <input type="datetime-local" class="form-control border-2" id="ngayTraPhong"
+                            formControlName="ngayTraPhong" ng-model="inputValue.ngayTra">
+                        <p ng-if="kiemTra.ngayTra" class="text-danger">Vui lòng nhập lại ngày trả phòng!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <button type="reset" class="btn btn-outline-dark"><i class="bi bi-arrow-clockwise"></i>
+                        Reset</button>
+                    <button class="btn btn-outline-dark btn-primary" type="submit">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

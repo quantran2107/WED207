@@ -1,0 +1,80 @@
+<form class="mt-3 p-3">
+    <div class="row">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputHoVaTen" class="form-label">Loại Phòng:</label>
+                <input type="text" class="form-control border-2" id="InputHoVaTen" ng-model="inputValue.loaiPhong" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputDienTich" class="form-label">Diện tích:</label>
+                <input type="text" class="form-control border-2" id="InputDienTich" ng-model="inputValue.dienTich" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputLoaiGiuong" class="form-label">Loại Giường:</label>
+                <input type="text" class="form-control border-2" id="InputLoaiGiuong" ng-model="inputValue.loaiGiuong" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputTieuChuan" class="form-label">Tiêu chuẩn:</label>
+                <input type="text" class="form-control border-2" id="InputTieuChuan" ng-model="inputValue.tieuChuan" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputPhongTam" class="form-label">Phòng tắm:</label>
+                <input type="text" class="form-control border-2" id="InputPhongTam" ng-model="inputValue.phongTam" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputCuaSo" class="form-label">Cửa sổ:</label>
+                <input type="text" class="form-control border-2" id="InputCuaSo" ng-model="inputValue.cuaSo" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="mb-3">
+                <label for="InputGia" class="form-label">Giá(1 đêm):</label>
+                <input type="text" class="form-control border-2" id="InputGia" ng-model="inputValue.gia" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="ngayNhanPhong">Ngày nhận phòng:</label>
+                <input type="datetime-local" class="form-control border-2" id="ngayNhanPhong"
+                    formControlName="ngayNhanPhong" ng-model="inputValue.ngayNhan" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="ngayTraPhong">Ngày trả phòng:</label>
+                <input type="datetime-local" class="form-control border-2" id="ngayTraPhong"
+                    formControlName="ngayTraPhong" ng-model="inputValue.ngayTra" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputSoDem" class="form-label">Số đêm:</label>
+                <input type="text" class="form-control border-2" id="InputSoDem" ng-model="inputValue.soDem" disabled>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="mb-3">
+                <label for="InputThanhTien" class="form-label">Thành Tiền:</label>
+                <input type="text" class="form-control border-2" id="InputCuaSo" ng-model="inputValue.thanhTien" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <a href="#!/SuaThongTinPhong/{{inputValue.id}}"><button class="btn btn-warning" type="submit">Chỉnh sửa</button></a>
+        </div>
+    </div>
+</form>

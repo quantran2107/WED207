@@ -1,0 +1,50 @@
+<div class="container-fluid p-0">
+    <div class="container">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <table class="table table-bordered">
+            <thead class="text-center align-middle">
+                <tr>
+                    <th>Loại Phòng</th>
+                    <th>Thông tin phòng</th>
+                    <th>Số đêm</th>
+                    <th>Giá</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in listPhongGioHang">
+                    <td class="text-center fw-bold w-25 text-danger"><img src="{{item.img}}" alt=""
+                            class="img-fluid">{{item.loaiPhong}}</td>
+                    <td>
+                        <h6>Diện tích: {{ item.dienTich }}</h6>
+                        <h6>Loại giường: {{ item.loaiGiuong }}</h6>
+                        <h6>Tiêu chuẩn: {{ item.tieuChuan }}</h6>
+                        <h6>Phòng tắm: {{ item.phongTam }}</h6>
+                        <h6>Cửa sổ: {{ item.cuaSo }}</h6>
+                    </td>
+                    <td class="text-center fw-bold align-middle">{{ item.soDem }}</td>
+                    <td class="text-center fw-bold align-middle">
+                        <h4 class="fw-bold fs-5">{{ item.gia * item.soDem | currency: '' :0}} VND</h4>
+                    </td>
+                    <td class="align-middle">
+                        <a href="#!/ThongTinPhong/{{item.id}}" class="text-decoration-none">
+                            <button class="btn btn-warning">Chi tiết</button>
+                        </a>
+                        <a href="#!/ThanhToan/{{item.id}}" class="text-decoration-none">
+                            <button class="btn btn-success">Thanh toán</button>
+                        </a>
+                        <button ng-click="xoaPhongGioHang(item.id)" class="btn btn-danger">Hủy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-center fw-bold align-middle">Tổng tiền</td>
+                    <td class="text-center fw-bold align-middle fs-3" id="tong-tien">{{ tongTien | currency: '' :0}} VND
+                    </td>
+                    <td><button ng-click="xoaPhongGioHangAll()" class="btn btn-danger">Hủy toàn bộ</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

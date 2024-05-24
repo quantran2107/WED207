@@ -1,0 +1,117 @@
+{
+  "Phong": [
+    {
+      "id": "1",
+      "img": "https://a25hotel.com/files/images/SM_00256.jpg",
+      "loaiPhong": "HẠNG PHÒNG CAO CẤP",
+      "dienTich": "30 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Không cửa sổ",
+      "gia": 1250000
+    },
+    {
+      "id": "2",
+      "img": "https://a25hotel.com/files/images/684mksangtrong1.jpg",
+      "loaiPhong": "HẠNG PHÒNG SANG TRỌNG",
+      "dienTich": "30-32 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Có cửa sổ",
+      "gia": 1380000
+    },
+    {
+      "id": "3",
+      "img": "https://a25hotel.com/files/images/khach-san-tai-ha-noi/khach-san-tai-quan-hai-ba-trung/khach-san-minh-khai/president/hang-phong-president-suite.jpg",
+      "loaiPhong": "HẠNG PHÒNG VIP",
+      "dienTich": "34-36 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Có cửa sổ",
+      "gia": 1620000
+    },
+    {
+      "id": "4",
+      "img": "https://a25hotel.com/files/images/khach-san-tai-ha-noi/khach-san-tai-quan-hai-ba-trung/khach-san-minh-khai/suite-vip/hang-phong-vip_2.jpg",
+      "loaiPhong": "HẠNG PHÒNG SUITE VIP",
+      "dienTich": "60 m2",
+      "loaiGiuong": "1 Giường 2m*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Có cửa sổ",
+      "gia": 2250000
+    },
+    {
+      "id": "5",
+      "img": "https://a25hotel.com/files/images/SM_00085-Recovered.jpg",
+      "loaiPhong": "HẠNG PHÒNG PRESIDENT SUITE",
+      "dienTich": "60 m2",
+      "loaiGiuong": "1 Giường 2m*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Có cửa sổ",
+      "gia": 5000000
+    }
+  ],
+  "gioHang": [
+    {
+      "id": "095f",
+      "img": "https://a25hotel.com/files/images/SM_00256.jpg",
+      "loaiPhong": "HẠNG PHÒNG CAO CẤP",
+      "dienTich": "30 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Không cửa sổ",
+      "gia": 1250000,
+      "ngayNhan": "2024-02-29T03:34:00.000Z",
+      "ngayTra": "2024-03-15T03:34:00.000Z",
+      "soDem": 15
+    }
+  ],
+  "LichSuDatPhong": [
+    {
+      "id": "23f8",
+      "img": "https://a25hotel.com/files/images/SM_00256.jpg",
+      "loaiPhong": "HẠNG PHÒNG CAO CẤP",
+      "dienTich": "30 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Không cửa sổ",
+      "gia": 1250000,
+      "ngayNhan": "2024-02-01T19:18:00.000Z",
+      "ngayTra": "2024-02-08T19:18:00.000Z",
+      "soDem": 7,
+      "hoTen": "1",
+      "email": "quan@gmail.com",
+      "gioiTinh": "Nam",
+      "SDT": "2",
+      "httt": "TheTinDung",
+      "CCCD_CMND": "4"
+    },
+    {
+      "id": "e96e",
+      "img": "https://a25hotel.com/files/images/SM_00256.jpg",
+      "loaiPhong": "HẠNG PHÒNG CAO CẤP",
+      "dienTich": "30 m2",
+      "loaiGiuong": "1 Giường 2m*2m / 2 Giường 1m2*2m",
+      "tieuChuan": "2 Người lớn",
+      "phongTam": "Có bồn tắm",
+      "cuaSo": "Không cửa sổ",
+      "gia": 1250000,
+      "ngayNhan": "2024-02-05T00:33:00.000Z",
+      "ngayTra": "2024-02-09T20:33:00.000Z",
+      "soDem": 4,
+      "hoTen": "Trần Anh Quân",
+      "email": "quan@gmai.com",
+      "gioiTinh": "Nam",
+      "SDT": "0337927860",
+      "httt": "TienMat",
+      "CCCD_CMND": "1234656"
+    }
+  ]
+}

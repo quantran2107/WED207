@@ -1,0 +1,40 @@
+<div class="container-fluid p-0">
+    <div class="container">
+        <div class="container p-4">
+            <h2 class="fw-bold text-center align-middle">{{title}}</h2>
+        </div>
+        <table class="table table-bordered">
+            <thead class="text-center align-middle">
+                <tr>
+                    <th>Loại Phòng</th>
+                    <th>Thông tin phòng</th>
+                    <th>Thông tin người đặt</th>
+                    <th>Thời gian</th>
+                    <th>Tổng tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in listLichSuDatPhong">
+                    <td class="text-center fw-bold w-25 text-danger"><img src="{{item.img}}" alt=""
+                            class="img-fluid">{{item.loaiPhong}}</td>
+                    <td>
+                        <h6>Diện tích: {{ item.dienTich }}</h6>
+                        <h6>Loại giường: {{ item.loaiGiuong }}</h6>
+                        <h6>Tiêu chuẩn: {{ item.tieuChuan }}</h6>
+                        <h6>Phòng tắm: {{ item.phongTam }}</h6>
+                        <h6>Cửa sổ: {{ item.cuaSo }}</h6>
+                    </td>
+                    <td>
+                        <h6>Họ và tên: {{ item.hoTen }}</h6>
+                        <h6>Giới tính: {{ item.gioiTinh }}</h6>
+                        <h6>SĐT: {{ item.SDT }}</h6>
+                        <h6>Email: {{ item.email }}</h6>
+                        <h6>CCCD_CMND: {{ item.CCCD_CMND }}</h6>
+                    </td>
+                    <td>{{ item.ngayNhan | date: "dd-MM-yyyy"}} - {{ item.ngayTra | date: "dd-MM-yyyy"}}</td>
+                    <td>{{ item.gia * item.soDem | currency: '' :0}} VNĐ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
